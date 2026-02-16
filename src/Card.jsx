@@ -1,3 +1,7 @@
-export default function Card(props) {
-  return <div className="card">{props.text}</div>;
+export default function Card({ text, style }) {
+  return (
+    <div className="card" style={style}>
+      {text}
+    </div>
+  );
 }
