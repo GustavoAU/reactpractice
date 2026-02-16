@@ -1,14 +1,19 @@
-
-import './index.css'
-
+import './index.css';
+import Card from './Card';
 function App() {
-  
+  function handleToggle(e) {
+    console.log(e.target.checked);
+  }
 
   return (
     <>
-      <h1>Hello react</h1>
+      <Card text="Card 112333" />
+      <label className="switch">
+        <input type="checkbox" onChange={handleToggle} />
+        <span className="slider round"></span>
+      </label>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

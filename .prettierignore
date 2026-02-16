@@ -1,0 +1,9 @@
+node_modules
+dist
+build
+.git
+pnpm-lock.yaml
+public
+images
+*.min.js
+*.bundle.js
